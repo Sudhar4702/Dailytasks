@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer
+      src="https://kit.fontawesome.com/589957875e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="/Ticket App/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <title>Tickets</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="catogery" >
+                <div class="catogery-box">
+                    <i class="fa-solid fa-bars"></i>
+                    <select name="text-catogery" id="ticket-state">
+                        <option value="all">All Tasks</option>
+                        <option value="new">New</option>
+                        <option value="wip">WIP</option>
+                        <option value="pending">Pending</option>
+                        <option value="closed">Closed</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="priority-box">
+                <div class="priority-select">
+                    <i class="fa-solid fa-bars"></i>
+                    <select name="priority" id="priority" class="">
+                        <option value="levels">Priority levels</option>
+                        <option value="red">RED - New Task</option>
+                        <option value="blue">BULE - WIP</option>
+                        <option value="yellow">YELLOW - Pending</option>
+                        <option value="green">GREEN - Closed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="title">
+                <h1>DAILY ACTIVITES</h1>
+            </div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search here" class="search-field"/>
+            </div>
+
+            <div class="right-box">
+                <div class="add-btn-back">
+                    <div class="add-btn bttn">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="text-add-btn">Add Task</span>
+                    </div>
+                </div>
+                <div class="delete-btn-back">
+                    <div class="delete-btn bttn">
+                        <i class="fa-solid fa-trash"></i>
+                        <span class="text-delete-btn">Delete Task</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="ticket-list">
+      
+            </div>
+
+        </main>
+        <dialog class="ticket-box">
+            <div class="top-row">
+                <label for="title-name">New Activity</label>
+            </div>
+            <div class="form-group">
+                <label for="activity-name">Activity Name - (You can't to edit after submit)</label>
+                <input type="text" id="activity-name" placeholder="Enter the activity name">
+            </div>
+            <div class="form-group">
+                <label for="activity-description-box">Description - (You can able to edit after submit)</label>
+                <textarea name="description" id="activity-description-box" placeholder="Enter the activity details"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="priority-level-name">Priority Level - (You can't to edit after submit)</label>
+                <select id="priority-level-name">
+                    <option value="red">New</option>
+                    <option value="blue">WIP</option>
+                    <option value="yellow">Pending</option>
+                    <option value="green">Closed</option>
+                </select>
+            </div>
+            <div class="chosen-color-priority">
+                <div class="red color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="submit-btn">
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+        </dialog>
+    </div>
+</body>
+</html>
