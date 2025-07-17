@@ -474,3 +474,112 @@ textarea {
   box-shadow: 0 0 12px rgba(20, 16, 0, 0.995);
   transition: all 0.3s ease-in-out;
 }
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .catogery,
+  .priority-box,
+  .title,
+  .search-box,
+  .right-box {
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .search-box {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 16px;
+    height: auto;
+  }
+
+  .ticket-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .ticket-boxs-header {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .ticket-head {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 10px;
+  }
+
+  .ticket-name,
+  .ticket-number {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .ticket-lock-btn {
+    position: static;
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+
+  .ticket-box {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .right-box {
+    width: auto;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .text-add-btn,
+  .text-delete-btn {
+    transform: none;
+    position: static;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .chosen-color-priority {
+    flex-direction: column;
+    height: auto;
+    gap: 6px;
+  }
+
+  .color {
+    width: 100%;
+    height: 1.5rem;
+  }
+
+  dialog input,
+  dialog select,
+  textarea {
+    font-size: 16px;
+  }
+
+  #submit-btn {
+    padding: 16px;
+    font-size: 16px;
+  }
+}
